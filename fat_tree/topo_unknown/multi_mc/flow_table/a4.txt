@@ -1,0 +1,9 @@
+table_add ethertype_check_for_mc multicast 0x2020 =>
+table_add addIntInfo add_int_info 0x2020 1 => 24 1
+table_add delIntInfo del_int_info 0x2020 =>
+table_add addPathInfo add_path_info 0x2020 => 24
+
+mc_mgrp_create 1
+
+mc_node_create 1 1
+mc_node_associate 1 0
